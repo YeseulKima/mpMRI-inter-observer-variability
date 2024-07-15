@@ -10,12 +10,12 @@ Before run the code, install packages from the requirements.txt file.
 ## Description
 
 ### 1) Inter-observer variability types
-* Dice Similarity Coeffecient (DSC):It measures the overlap between two sets. It is 1 when the two sets are identical and 0 when there is no overlap.
-    - Range: 0 (complete mismatch) - 1 (perfect match)
-* Hausdorff Distance: The maximum distance between the farthest points of the two sets (a large value close to infinity).
-    - Range: 0 (perfect match) - infinity (complete mismatch)
-* Intraclass Correlation Coefficient (ICC): It measures the agreement between observers. It is 1 for perfect agreement, 0 for no agreement, and negative values indicate a lack of consistency.
-    - Range: [-1, 1] / 0 (complete mismatch) - 1 (perfect match)
+* **Dice Similarity Coeffecient (DSC)**:It measures the overlap between two sets. It is 1 when the two sets are identical and 0 when there is no overlap.
+    - Range: **0 (complete mismatch) - 1 (perfect match)**
+* **Hausdorff Distance**: The maximum distance between the farthest points of the two sets (a large value close to infinity).
+    - Range: **0 (perfect match) - infinity (complete mismatch)**
+* **Intraclass Correlation Coefficient (ICC)**: It measures the agreement between observers. It is 1 for perfect agreement, 0 for no agreement, and negative values indicate a lack of consistency.
+    - Range: [-1, 1] / **0 (complete mismatch) - 1 (perfect match)**
 
   
 ### 2) Usage
