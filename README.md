@@ -20,7 +20,9 @@ Before run the code, install packages from the requirements.txt file.
   
 ### 2) Usage
 - Input: (More than 2) Contoured mask in nrrd or nifti or dicom format.
-- Output: Inter-observer variability values. 
+- Output: Inter-observer variability values.
+1) Command-line tool: "$python calculate_2D_dsc_hd_icc_command_line_tool.py --region1 path_to_region1 --region2 path_to_region2 --region3 path_to_region1 --region3"
+2) Code-based: To Be Added. 
 
 
 ## Paper
