@@ -3,8 +3,8 @@
 
 ## Requirements
 Before run the code, install packages from the requirements.txt file. 
-- TotalSegmentator >= 2.2
 - Python >= 3.9
+- numpy, scipy, scikit-image, statsmodels
 
 
 ## Description
