@@ -3,7 +3,7 @@ from scipy.spatial.distance import directed_hausdorff
 from skimage import measure
 import statsmodels.api as sm
 
-# 샘플 2D 영역 생성 (예: 3개의 이진 이미지)
+# Sample 2D masks creation. 
 region1 = np.array([[0, 0, 0, 1, 1, 0, 0],
                     [0, 1, 1, 1, 1, 1, 0],
                     [0, 1, 1, 1, 1, 1, 0],
@@ -43,13 +43,13 @@ def icc(data):
     msb = np.sum((mean_targets - mean_total) ** 2) * data.shape[0]
     return (msr - msw) / (msr + (data.shape[1] - 1) * msw)
 
-# 각 영역 사이의 지표 계산
+# Calculate the metrics.
 for i in range(len(regions)):
     for j in range(i + 1, len(regions)):
         dsc = dice_coefficient(regions[i], regions[j])
         hd = hausdorff_distance(regions[i], regions[j])
         print(f'Region {i + 1} vs Region {j + 1} - DSC: {dsc:.4f}, Hausdorff Distance: {hd:.4f}')
 
-# ICC 계산 (여기서는 각 영역의 픽셀 값을 관찰값으로 사용)
+# Calculate the ICC (Here, the pixel value of each area is used as the observation value.)
 icc_value = icc([region1.flatten(), region2.flatten(), region3.flatten()])
 print(f'ICC: {icc_value:.4f}')
